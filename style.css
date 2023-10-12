@@ -1,0 +1,596 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /* font: inherit; */
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* variables */
+:root {
+    --mhpgreen: #1A2929;
+    --white: #f5f5f5;
+    --mhpblue: #DAE3EA;
+    --mhpgrey: #6D7D8B;
+}
+
+
+/* Font definitions */
+@font-face {
+    font-family: mulish;
+    src: url(/fonts/Mulish-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(/fonts/OpenSans-VariableFont_wdth.ttf);
+}
+
+@font-face {
+    font-family: se ;
+    src: url();
+}
+
+/* general settings */
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: opensans;
+}
+
+html {
+    background-color: var(--mhpgreen);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+
+/* Main Setting for Phone starts here */
+.mainLogo {
+    width: 209px;
+    height: 46px;
+    margin: 30px auto 5px auto;
+    background-image: url(/assets/LogoMain.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.navLinks {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.navLinks ul {
+    margin: auto;
+    width: 100%;
+}
+
+.navLinks li {
+    color: white;
+    display: inline;
+}
+
+.navLinks a {
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: mulish;
+    text-decoration: none;
+    margin: 0px 14px;
+}
+
+.active {
+    color: var(--mhpgreen) !important;
+    background-color: var(--white);
+    font-size: 12px !important;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.home_banner_Heading{
+    margin: 40px auto 20px 18px;
+}
+
+.home_banner_Heading h1{
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home_banner_images {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 3px;
+    margin: 20px;
+    height: 89px;
+}
+
+.home_banner_image1 {
+    grid-column: 1/2;
+    /* width: 249px; */
+    background-image: url(/assets/Home_banner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_banner_imageGroup {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+.home_banner_image2 {
+    background-image: url(/assets/Home_banner2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_banner_image3 {
+    background-image: url(/assets/Home_banner3.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.ceo_caption{
+    height: 90px;
+    background-color: var(--white);
+    color: var(--mhpgreen);
+    border: solid 1px var(--mhpgreen);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+figure{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    align-content: center;
+    position: absolute;
+}
+
+figcaption{
+    text-align: right;
+    margin: 5px auto;
+    font-size: 12px;
+}
+
+
+.why_us{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.why_us h1{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.why_us p{
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.why_us_img{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 5px;
+}
+
+#whyusimg_1{
+    grid-column: 1/13;
+    grid-row: 1;
+}
+
+#whyusimg_2{
+    width: 100%;
+    grid-column: 1/6;
+    grid-row: 2;
+}
+
+#whyusimg_3{
+    width: 100%;
+    grid-column:6/13;
+    grid-row: 2;
+    /* margin-top: 40px; */
+}
+
+.why_us_points{
+    margin: 30px 10px;
+}
+
+.why_us_data{
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.why_us_data img{
+    grid-column: 1/2;
+}
+
+.why_us_data p{
+    grid-column: 2/13;
+    line-height: 1.4;
+}
+
+.contact_btn{
+    width: 162px;
+    height: 60px;
+    border-radius: 20px
+}
+
+.contact_btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.mhp_commitment{
+    margin-top: 70px;
+    width: 100%;
+
+}
+
+.mhp_commitment_item{
+    margin-bottom: 50px;
+}
+
+.commitment_img img{
+    /* padding: 5 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+   
+}
+
+.commitment_data h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 48px;
+    font-family: opensans;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.commitment_data p{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: opensans;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.learnmore{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.learnmore img, .learnmore p{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+}
+.mhp_reviews{
+    margin: 20px;
+}
+
+
+.review_heading h1{
+    font-size: 48px;
+    font-weight: 800;
+    font-family: opensans;
+    line-height: 1.5;
+}
+
+.review_block{
+    width: 90%;
+    height: 400px;
+    background-color: var(--mhpblue);
+    margin: 50px auto 30px auto;
+    padding: 10px;
+}
+
+.review_block img{
+    margin: 50px auto 0px 20px;
+}
+
+.review_block p{
+    margin: 20px auto 0px 20px;
+    color: var(--mhpgrey);
+    font-size: 18px;
+    font-family: mulish;
+    line-height: 1.6;
+}
+
+.reviewer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    color: var(--mhpgrey);
+    margin-top: 40px;
+
+}
+
+.reviewer img{
+    grid-column: 1/2;
+    margin: auto;
+}
+
+.reviewer h3{
+    grid-column: 2/3;
+    font-family: mulish;
+    font-size: 18px;
+}
+
+
+.reviewer span{
+    line-height: 2;
+    font-size: 12px;
+}
+
+
+.Mhp_contactus{
+    background-color: var(--mhpblue);
+    color: var(--mhpgrey);
+}
+
+.Mhp_contactus img{
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.contact_social, .contact_services{
+    margin: 40px 30px auto 20px;
+}
+
+.contact_services{
+    margin-top: 10px;
+}
+
+
+.contact_social p, .contact_services p{
+    font-family: mulish;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+.contact_social img {
+    padding: 0;
+    display: inline;
+}
+
+.contact_social a, .contact_services a{
+    text-decoration: none;
+    color: var(--mhpgrey);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: mulish;
+}
+
+.contact_social li, .contact_services li{
+    margin-bottom: 5px;
+}
+
+.contact_paragraph{
+    display: block;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.form_contact_us {
+    width: 95%;
+    margin: 60px auto 0px auto;
+   }
+   
+.form_contact_us button {
+width: 295px;
+height: 63px;
+margin-left: 30px;
+margin-bottom: 0px;
+border-radius: 10px;
+border-color: var(--white);
+text-align: left;
+padding-left: 20px;
+text-transform: uppercase;
+font-weight: 700;
+background-color: var(--mhpgrey);
+color: var(--white);
+
+}
+
+.form_contact_us img{
+    display: inline;
+}
+
+.form_contact_us p{
+    text-align: right;
+    font-size: 0.7em;
+    font-family: mulish;
+    color: var(--mhpgrey);
+    padding-bottom: 60px;
+}
+
+.form_contact_us a{
+    text-decoration: none;
+}
+
+
+.form_items {
+margin: 10px;
+padding-bottom: 10px;
+border-bottom: solid 1px var(--mhpgrey)
+}
+
+.form_contact_us input {
+width: 70%;
+background-color: rgba(0, 0, 0, 0);
+border-style: none;
+color: var(--mhpgrey);
+outline: none;
+padding-left: 30px;
+text-overflow: ellipsis;
+}
+
+.form_items textarea {
+background-color: rgba(0, 0, 0, 0);
+width: 100%;
+outline: none;
+border-style: none;
+color: var(--mhpgrey);
+}
