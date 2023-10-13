@@ -189,6 +189,7 @@ html {
 
 .navLinks {
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 12px;
 }
 
@@ -216,7 +217,7 @@ html {
     background-color: var(--white);
     font-size: 12px !important;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 15px;
 }
 
 .home_banner_Heading{
@@ -525,14 +526,6 @@ figcaption{
     margin-left: 20px;
 }
 
-
-
-
-
-
-
-
-
 .form_contact_us {
     width: 95%;
     margin: 60px auto 0px auto;
@@ -563,7 +556,7 @@ color: var(--white);
     font-size: 0.7em;
     font-family: mulish;
     color: var(--mhpgrey);
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .form_contact_us a{
@@ -593,4 +586,125 @@ width: 100%;
 outline: none;
 border-style: none;
 color: var(--mhpgrey);
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: mulish;
+    font-size: 12px;
+    background-color: var(--mhpblue);
+    color: var(--mhpgrey);
+    padding: 20px 0px 0px 0px;
+}
+
+footer p{
+margin-left: 10px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+
+/* Styling for Project Page */
+.projects_intro{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}
+
+.projects_intro h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.projects_intro p{
+    width: 80%;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.project_list{
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    background-color: var(--mhpblue);
+    color: black;
+    font-family: mulish;
+    font-size: 24px;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+.project_list img{
+    width: 100%;
+    height: 220px;
+}
+
+.project_list p{
+    margin-left: 20px;
+}
+
+.project_btn{
+    width: 200px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: var(--mhpblue);
+    text-align: center;
+    color: var(--mhpgrey);
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-family: mulish;
+    font-size: 16px;
+}
+
+
+/* styling aboutus page here */
+
+.about_us img{
+    display: flex;
+    width: 350px;
+    height: 154px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.about_us h1{
+    font-family: mulish;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.about_us p{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 327px;
+    font-family: mulish;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.signature{
+    margin-bottom: 5px !important;
+    margin-top: 50px !important;
+}
+
+
+.signature_ecclipse{
+    margin-bottom: 5px !important;
+}
+
+.signature_ecclipse img{
+    width: auto;
+    height: auto;
+    margin: 0px !important;
+}
+
+.signature_CEO{
+    margin-bottom: 30px !important;
 }
