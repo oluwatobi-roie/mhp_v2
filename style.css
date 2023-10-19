@@ -652,6 +652,16 @@ text-align: center;
     margin-left: 20px;
 }
 
+.project_list h4{
+    /* display: flex; */
+    font-family: mulish;
+    color: var(--mhpgrey);
+    font-size: 14px;
+    font-weight: 600;
+    /* float: right; */
+
+}
+
 .project_btn{
     width: 200px;
     height: 48px;
@@ -721,12 +731,17 @@ text-align: center;
 
 /* small tablets 620 - 959px*/
 @media screen and (min-width: 620px){
+
     .home_main{
         width: 80%;
         margin: auto;
     }
     .large_screen{
         display: block;
+    }
+
+    .small_screen {
+        display: none;
     }
 
     .navLinks a{
@@ -818,6 +833,118 @@ text-align: center;
         height: auto;
         margin: auto;
     }
+
+    .mhp_commitment_item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        /* height: max-content; */
+    }
+
+    .commitment_img {
+        height: 100%;
+        width: auto;
+        margin: 0px;
+        flex: left;
+    }
+
+    .learnmore{
+        margin: 50px 0px 0px 20px;
+    }
+
+    .commitment_data{
+        width: 80%;
+    }
+
+    .commitment_data h1{
+        margin: 0px;
+    }
+
+    .commitment_data p{
+        width: 100%;
+    }
+
+    .learnmore p {
+        margin: 0px;
+        width: auto;
+    }
+
+    .mhp_reviews{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .review_heading{
+        grid-column: 1/4;
+        margin: 70px auto;
+    }
+
+    .review_heading h1{
+        text-align: center;
+    }
+
+    .Mhp_contactus{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contact_us_logo{
+    
+        /* size-adjust: 1.5; */
+
+    }
+
+    .contact_services, .contact_social{
+        margin: 100px 0px 0px 0px;
+    }
+
+    .contact_services li,
+    .contact_social li{
+        margin: 20px 0px 20px 0px;
+    }
+
+    .form_contact_us {
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    .contact_heading{
+        font-size: 15.22px;
+        margin: 0px 0px 30px 20px;
+
+    }
+
+    .form_contact_us button{
+        display: inline;
+        width: 220px !important;
+        height: 63px !important;
+        margin: 20px 50px 0px 30px;
+        padding: 10px 0px 0px 20px;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+   
+    }
+
+    .form_contact_us p{
+        display: inline-block;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: var(--mhpgrey);
+    }
+
+
+    
 }
 
 @media screen and (min-width: 960px){
@@ -844,5 +971,7 @@ text-align: center;
     .home_banner_images{
         height: 283px;
     }
+
+
 
 }
