@@ -7,7 +7,7 @@
     <title>MidHouseProLimited</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="typeWriter1(),    typeWriter2()">
     <section class="home_main">
         <nav class="large_nav">
             <div class="mainLogo"> </div>
@@ -24,8 +24,8 @@
         <div class="home_banner">
             <div class="home_banner_Heading">
                 <div class="heading_text">
-                    <h1>LET US BUILD YOUR</h1>
-                    <h1>HOME FOR YOU</h1>
+                    <h1 id="typewriter1"></h1>
+                    <h1 id="typewriter2"></h1>
                     <div class="large_screen large_screen_text">
                         <p>
                             Our team of skilled professionals stands prepared to 
@@ -42,8 +42,8 @@
             </div>
 
             <div class="home_banner_images">
-                <div class="home_banner_image1"></div>
-                <div class="home_banner_imageGroup">
+                <div class="home_banner_image1 reveal_up"></div>
+                <div class="reveal_up home_banner_imageGroup">
                     <div class="home_banner_image2"></div>
                     <div class="home_banner_image3"></div>
                 </div>
@@ -118,7 +118,7 @@
     <!-- Commitment Starts Here -->
     <div class="mhp_commitment">
         <div class="mhp_commitment_item">
-            <div class="commitment_img">
+            <div class="commitment_img reveal_left">
             <img src="/assets/integrity.png" alt="" srcset="">
             </div>
             <div class="commitment_data">
@@ -154,22 +154,22 @@
                     remain a reliable and forward-thinking partner
                 </p>
                 <div class="learnmore large_screen">
-                    <p>Learn more</p>
+                    <p >Learn more</p>
                     <img src="/assets/arrow_right.png">
                 </div>
             </div>
         <div class="learnmore small_screen">
-            <p>Learn more</p>
+            <p id="specialSpace">Learn more</p>
             <img src="/assets/arrow_right.png">
         </div>
-        <div class="commitment_img">
+        <div class="reveal_right commitment_img">
             <img src="/assets/Adaptability.png" alt="" srcset="">
         </div>
         </div>
         
         
         <div class="mhp_commitment_item">
-            <div class="commitment_img">
+            <div class="reveal_left commitment_img">
             <img src="/assets/Attention.png" alt="" srcset="">
         </div>
         <div class="commitment_data">
@@ -295,7 +295,7 @@
 
         <div class="form_contact_us_main">
           
-            <form class="form_contact_us">
+            <form action="mailto:info@midhouseprolimited.com" method="post" enctype="text/plain" class="form_contact_us">
                 <h1 class="contact_heading small_hide">
                     SEND US A MESSAGE
                 </h1>

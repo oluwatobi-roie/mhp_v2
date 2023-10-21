@@ -191,7 +191,32 @@ html {
     opacity: 1;
 }
 
+.reveal_left{
 
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal_left.animate_active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.reveal_right {
+
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal_right.animate_active {
+    transform: translateX(0);
+    opacity: 1;
+}
 
 .reveal_down {
     position: relative;
@@ -410,6 +435,14 @@ figcaption{
 }
 
 .commitment_img img{
+    transition: transform 0.2s;
+}
+
+.commitment_img img:hover{
+    scale: 1.1;
+}
+
+.commitment_img img{
     /* padding: 5 */
     display: flex;
     justify-content: center;
@@ -443,11 +476,18 @@ figcaption{
     margin-top: 40px;
 }
 
+
+
 .learnmore img, .learnmore p{
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
 }
+
+#specialSpace {
+    margin-bottom: 40px !important;
+}
+
 .mhp_reviews{
     margin: 20px;
 }
@@ -641,6 +681,63 @@ text-align: center;
 
 
 /* Styling for Project Page */
+
+.ongoing_projects {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.ongoing_projects h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.ongoing_projects p {
+    text-transform: capitalize;
+    text-align: left;
+    width: 70%;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    /* margin-top: 30px; */
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+
+.ongoing_projects_img{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.pages{
+    display: none;width: 100%;
+}
+
+.projectImages{
+}
+
+.projectImages img{
+    width: 300px;
+    height: 254px;
+    padding: 10px;
+    margin: 0px auto 50px auto;
+    border: solid 1px var(--white);
+}
+
+.Page_active{
+    display: block;
+}
+
+#previous{
+    display: none;
+}
+
+
 .projects_intro{
     margin-top: 70px;
     margin-bottom: 30px;
@@ -653,47 +750,16 @@ text-align: center;
     font-weight: 700;
 }
 
-.projects_intro p{
-    width: 80%;
-    font-size: 18px;
-    margin-top: 30px;
-    font-weight: 700;
-    line-height: 1.6;
+.project_btn_group {
+    justify-content: center;
+    width: max-content;
+    margin: auto;
 }
 
-.project_list{
-    width: 90%;
-    height: 500px;
-    margin: 30px auto;
-    background-color: var(--mhpblue);
-    color: black;
-    font-family: mulish;
-    font-size: 24px;
-    line-height: 1.5;
-    position: relative;
-    border-radius: 10px;
-}
-
-.project_list img{
-    width: 100%;
-    height: 220px;
-}
-
-.project_list p{
-    margin-left: 20px;
-}
-
-.project_list h4{
-    /* display: flex; */
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    font-family: mulish;
-    color: var(--mhpgrey);
-    font-size: 14px;
-    font-weight: 600;
-
+.project_btn_group button {
+    margin-left: 5px;
+    width: 200px;
+    font-size: 0.8em;
 }
 
 .project_btn{
@@ -709,53 +775,6 @@ text-align: center;
     font-size: 16px;
 }
 
-.ongoing_projects{
-    font-family: mulish;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 40px 0px;
-}
-
-.ongoing_projects h1{
-    margin-bottom: 20px;
-}
-
-
-.ongoing_projects_img{
-    margin: auto;
-    padding: 30px;
-    width: 350px;
-    height: 350px;
-    width: 60%;
-   /*  height: auto; */
-    background-image: url("");
-    animation: project_slider 35s infinite linear;
-}
-
-@keyframes project_slider {
-    0%{ background-image: url("assets/ongoing_sliders/1.jpg");}
-    7.15%{ background-image: url("assets/ongoing_sliders/2.jpg");}
-    14.3%{ background-image: url("assets/ongoing_sliders/3.jpg");}
-    21.45%{ background-image: url("assets/ongoing_sliders/4.jpg");}
-    28.6%{ background-image: url("assets/ongoing_sliders/5.jpg");}
-    35.75%{ background-image: url("assets/ongoing_sliders/6.jpg");}
-    42.9%{ background-image: url("assets/ongoing_sliders/7.jpg");}
-    50.05%{ background-image: url("assets/ongoing_sliders/8.jpg");}
-    57.2%{ background-image: url("assets/ongoing_sliders/9.jpg");}
-    64.35%{ background-image: url("assets/ongoing_sliders/10.jpg");}
-    71.5%{ background-image: url("assets/ongoing_sliders/11.jpg");}
-    78.65%{ background-image: url("assets/ongoing_sliders/12.jpg");}
-    85.8%{ background-image: url("assets/ongoing_sliders/13.jpg");}
-    92.95%{ background-image: url("assets/ongoing_sliders/14.jpg");}
-    100%{ background-image: url("assets/ongoing_sliders/15.jpg");}
-}
-.ongoingslider {
-    display: none;
-}
-
-.show{
-    display: block;
-}
 
 /* styling aboutus page here */
 
@@ -1023,6 +1042,24 @@ text-align: center;
     }
 
 
+    .ongoing_projects h1{
+        margin: auto;
+        text-align: left;
+        /* margin-left: 300px; */
+        font-size: 48px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .ongoing_projects p{
+        margin-bottom: 100px;
+        text-align: left;
+        /* margin-left: 300px; */
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: none;
+    }
+
+
     .projects_intro{
         width: 90%;
         margin: 50px auto 10px auto;
@@ -1038,23 +1075,42 @@ text-align: center;
         font-size: 48px ;
     }
 
-    .project_list_container{
+    .Page_active{
+        /* width: 80%; */
+        margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projectImages img{
+        width:80%;
+        height: auto;
+    }
+    .projects_intro{
+        text-align: center;
+    }
+    .project_swipers{
+        display: flex;
+       justify-content: center;
+       margin-top: 30px;
+    }
+
+    .project_swipers img{
+        width: 80%;
         margin: auto;
     }
 
-    .project_list p{
-        font-size: 0.8em;
-        color: black;
+    .recentProjectSections{
+        margin-bottom: 100px;
+    }
+    .project_btn_group{
+        justify-content: center;
+        width:max-content;
+        margin: auto;
     }
 
-    .project_btn{
-        margin: 20px auto 50px auto ;
-        padding: auto;
-        padding-top: 10px;
-        padding-left: 27px;
+    .project_btn_group button{
+        margin-left: 40px;
         width: 200px;
         font-size: 0.8em;
     }
