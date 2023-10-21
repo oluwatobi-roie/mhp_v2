@@ -175,3 +175,5 @@ window.addEventListener("scroll", reveal_right);
 // window.addEventListener("scroll", reveal_down);
 window.addEventListener("load", reveal_up);
 window.addEventListener("load", reveal_down);
+window.addEventListener("load", reveal_left);
+window.addEventListener("load", reveal_right);
