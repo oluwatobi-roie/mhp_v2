@@ -178,6 +178,33 @@ html {
 
 
 
+/* animation settings */
+.reveal_up {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal_up.animate_active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.reveal_down {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal_down.animate_active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* Main Setting for Phone starts here */
 .large_screen{
     display: none;
@@ -682,6 +709,53 @@ text-align: center;
     font-size: 16px;
 }
 
+.ongoing_projects{
+    font-family: mulish;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.ongoing_projects h1{
+    margin-bottom: 20px;
+}
+
+
+.ongoing_projects_img{
+    margin: auto;
+    padding: 30px;
+    width: 350px;
+    height: 350px;
+    width: 60%;
+   /*  height: auto; */
+    background-image: url("");
+    animation: project_slider 35s infinite linear;
+}
+
+@keyframes project_slider {
+    0%{ background-image: url("assets/ongoing_sliders/1.jpg");}
+    7.15%{ background-image: url("assets/ongoing_sliders/2.jpg");}
+    14.3%{ background-image: url("assets/ongoing_sliders/3.jpg");}
+    21.45%{ background-image: url("assets/ongoing_sliders/4.jpg");}
+    28.6%{ background-image: url("assets/ongoing_sliders/5.jpg");}
+    35.75%{ background-image: url("assets/ongoing_sliders/6.jpg");}
+    42.9%{ background-image: url("assets/ongoing_sliders/7.jpg");}
+    50.05%{ background-image: url("assets/ongoing_sliders/8.jpg");}
+    57.2%{ background-image: url("assets/ongoing_sliders/9.jpg");}
+    64.35%{ background-image: url("assets/ongoing_sliders/10.jpg");}
+    71.5%{ background-image: url("assets/ongoing_sliders/11.jpg");}
+    78.65%{ background-image: url("assets/ongoing_sliders/12.jpg");}
+    85.8%{ background-image: url("assets/ongoing_sliders/13.jpg");}
+    92.95%{ background-image: url("assets/ongoing_sliders/14.jpg");}
+    100%{ background-image: url("assets/ongoing_sliders/15.jpg");}
+}
+.ongoingslider {
+    display: none;
+}
+
+.show{
+    display: block;
+}
 
 /* styling aboutus page here */
 
